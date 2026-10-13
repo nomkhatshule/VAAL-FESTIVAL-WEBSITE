@@ -1,0 +1,21 @@
+# Netlify settings for the Vaal Festival website.
+# The site is plain HTML/CSS/JS, so there is no build step:
+# Netlify just publishes the files in the "public" folder.
+
+[build]
+  publish = "public"
+  command = ""
+
+# Basic security headers for every page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Images rarely change, so let browsers keep them for a week
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
