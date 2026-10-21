@@ -13,7 +13,7 @@
     'Tycoon',
     'Juss Gigi',
     'Skelm',
-    null, // to be announced
+    'Enoo Napa',
     null  // to be announced
   ];
 
