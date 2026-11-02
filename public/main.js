@@ -14,7 +14,7 @@
     'Juss Gigi',
     'Skelm',
     'Enoo Napa',
-    null  // to be announced
+    'Sha Sha'
   ];
 
   var reduceMotion = false;
@@ -64,9 +64,9 @@
       });
 
       var cur = SLIDES[active];
-      caption.textContent = cur ? 'Headliner · ' + cur : 'Headliner · To be announced';
+      caption.textContent = 'Headliner · ' + cur;
       count.textContent = (active + 1) + ' / ' + n;
-      activeName.textContent = cur || 'a headliner still to be announced';
+      activeName.textContent = cur;
 
       playBtn.setAttribute('aria-label', state.playing ? 'Pause headliner stories' : 'Play headliner stories');
       iconPause.hidden = !state.playing;

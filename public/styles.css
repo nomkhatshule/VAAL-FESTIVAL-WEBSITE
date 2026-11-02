@@ -31,7 +31,6 @@ a{color:#034C2F}a:hover{color:#0A6B2E}
 .vf-btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #13230F}
 .vf-btn:focus-visible,.vf-dot:focus-visible,.vf-arrow:focus-visible,a:focus-visible{outline:3px solid #13230F;outline-offset:3px}
 .vf-name{-webkit-text-stroke:0}
-.vf-tbaname{color:transparent;-webkit-text-stroke:2px #FBD52A}
 @media (max-width:760px){.vf-hide-sm{display:none}}
 @media (prefers-reduced-motion:reduce){.vf-sname,.vf-sperson,.vf-btn{transition:none}.vf-flow{animation:none}}
 
@@ -40,3 +39,5 @@ a{color:#034C2F}a:hover{color:#0A6B2E}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body.vf-noscroll{overflow:hidden}
+/* soften photos whose cutout is cropped straight at the sides */
+.vf-fade-sides{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%)}
